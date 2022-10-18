@@ -23,14 +23,14 @@ string [] ThreeSignsArray (string [] array)
 {
    
     string [] NewArray = new string [array.Length];
-    int NewArrayIndex = 0 ;
+    int count = 0 ;
 
         for (int i=0; i<array.Length; i++)
         {
             if (array [i].Length <=3)
             {
-                NewArray[NewArrayIndex] = array[i]; 
-                NewArrayIndex ++;
+                NewArray[count] = array[i]; 
+                count ++;
             }
 
         }
